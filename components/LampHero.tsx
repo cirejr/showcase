@@ -8,7 +8,7 @@ import { TextRevealCard } from './ui/TextRevealCard'
 import { Button, Image } from '@nextui-org/react'
 import { AboutMeHeader } from './AboutMeHeader'
 import { SparklesBg } from './SparkesBg'
-import { GiDiamondRing } from 'react-icons/gi'
+import { GiBigDiamondRing, GiDiamondRing } from 'react-icons/gi'
 import { IoVideocam } from 'react-icons/io5'
 
 export function LampHero() {
@@ -20,19 +20,27 @@ export function LampHero() {
         <div className="flex justify-between gap-10 w-full">
           <div className="text-white flex flex-col gap-10 pt-5 max-w-[800px] px-20 ">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-              Hi, I'm Friend-Ly
+              Hi, I'm Friend-Ly <br />
+              <span className="text-2xl font-bold tracking-tight lg:text-3xl">
+                and I just want to get married!
+              </span>
             </h1>
+
             <p className="leading-7 [&:not(:first-child)]:mt-6">
               Once upon a time, in a far-off land, there was a very lazy king
               who spent all day lounging on his throne. One day, his advisors
               came to him with a problem: the kingdom was running out of money.
             </p>
             <div className="flex gap-4  items-center">
-              <Button color="secondary" endContent={<GiDiamondRing />}>
+              <Button
+                color="secondary"
+                variant="bordered"
+                endContent={<GiBigDiamondRing />}
+              >
                 Propose
               </Button>
               <Button
-                color="danger"
+                color="success"
                 variant="bordered"
                 startContent={<IoVideocam />}
               >
