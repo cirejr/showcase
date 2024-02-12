@@ -84,7 +84,7 @@ export const TextRevealCard = ({
             style={{
               textShadow: '4px 4px 15px rgba(0,0,0,0.5)',
             }}
-            className="text-base sm:text-[3rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
+            className="text-base sm:text-[3rem] py-10 font-bold   bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
           >
             {revealText}
           </p>
@@ -117,11 +117,7 @@ export const TextRevealCardTitle = ({
   children: React.ReactNode
   className?: string
 }) => {
-  return (
-    <h2 className={twMerge('text-white text-lg mb-2', className)}>
-      {children}
-    </h2>
-  )
+  return <h2 className={twMerge('  text-lg mb-2', className)}>{children}</h2>
 }
 
 export const TextRevealCardDescription = ({

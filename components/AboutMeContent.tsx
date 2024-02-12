@@ -11,13 +11,13 @@ export function AboutMeContent() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <Chip className=" py-1 mb-4 text-white " color="secondary">
+            <Chip className=" py-1 mb-4" color="secondary">
               {item.badge}
             </Chip>
 
-            <p className="text-xl mb-4 text-white">{item.title}</p>
+            <p className="text-xl mb-4">{item.title}</p>
 
-            <div className="text-sm text-white prose prose-sm dark:prose-invert">
+            <div className="text-sm   prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}

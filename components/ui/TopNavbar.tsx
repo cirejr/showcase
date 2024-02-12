@@ -16,25 +16,29 @@ import { AcmeLogo } from './AcmeLogo'
 
 export default function TopNavbar() {
   return (
-    <Navbar className="text-white py-4 bg-slate-900" isBlurred>
+    <Navbar
+      className="bg-transparent text-white dark:"
+      isBlurred={false}
+      position="static"
+    >
       <NavbarBrand>
         <AcmeLogo />
-        <p className="font-bold text-inherit text-white">ACME</p>
+        <p className="font-bold text-inherit">ACME</p>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className="text-inherit" href="#">
             About Me
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" aria-current="page" color="foreground">
+          <Link href="#" aria-current="page" className="text-inherit">
             Portfolio
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link href="#" className="text-inherit">
             Contact
           </Link>
         </NavbarItem>
@@ -49,14 +53,14 @@ export default function TopNavbar() {
               className="transition-transform"
               color="secondary"
               name="Jason Hughes"
-              size="lg"
+              size="sm"
               src="https://github.com/Shinomar.png"
             />
           </DropdownTrigger>
           <DropdownMenu
             aria-label="Profile Actions"
             variant="flat"
-            className="text-white"
+            className=" "
           >
             <DropdownItem key="profile" className="h-14 gap-2">
               <p className="font-semibold">Signed in as</p>

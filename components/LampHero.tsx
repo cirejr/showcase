@@ -18,7 +18,7 @@ export function LampHero() {
     <LampContainer>
       <SparklesBg>
         <div className="flex justify-between gap-10 w-full">
-          <div className="text-white flex flex-col gap-10 pt-5 max-w-[800px] px-20 ">
+          <div className="  flex flex-col gap-10 pt-5 max-w-[800px] px-20 ">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
               Hi, I'm Friend-Ly <br />
               <span className="text-2xl font-bold tracking-tight lg:text-3xl">

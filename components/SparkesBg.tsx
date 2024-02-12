@@ -13,7 +13,7 @@ export function SparklesBg({
   return (
     <div
       className={cn(
-        'h-[40rem] relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md',
+        'h-full relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md',
         className
       )}
     >
